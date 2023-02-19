@@ -1,0 +1,48 @@
+.imgContainer{
+    /* width: 100%; */
+}
+.galleryContainer{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+.columnSmall{
+    width: 20%;
+}
+.columnBig{
+    width: 70%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem
+}
+.imgContainer > img{
+    width: 100%;
+    height: auto;
+}
+.rowDown{
+    align-items: flex-start;
+}
+.rowUp{
+    align-items: flex-end;
+}
+.columnRight{
+    align-items: flex-start;
+}
+.columnLeft{
+    align-items: flex-end;
+}

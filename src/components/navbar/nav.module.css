@@ -1,0 +1,88 @@
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+h3,h5{
+    margin: 0;
+}
+.shoppingCart:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.listNavDirect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 1rem;
+}
+.listContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.avatarUser{
+    width: 2rem;
+}
+.shoppingCart{
+    font-size: 1.5rem;
+    position: relative;
+}
+.favorite{
+    font-size: 1.5rem;
+}
+.rightNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 6rem;
+    position: relative;
+}
+.navRightItem{
+    margin: 0 0.5rem;
+}
+.searchBtn{
+    border: hidden;
+    background-color: #fff;
+    padding: 0.8rem 1rem;
+}
+.logo{
+    font-weight: bold;
+}
+.searchInput{
+    border: none;
+    padding: 0.8rem 1rem 0.8rem 0;
+    width: 25rem;
+}
+.searchbar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.searchInput:focus{
+    outline: none;
+}
+.searchBtn:hover{
+    background-color: #ccc;
+}
+
+.amountItem{
+    display: block;
+    background-color: red;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    bottom: 1.4rem;
+    left: 1.4rem;
+    font-size: 1rem;
+    text-align: center;
+}

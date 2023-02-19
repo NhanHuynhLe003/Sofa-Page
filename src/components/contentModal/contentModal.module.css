@@ -1,0 +1,37 @@
+:root{
+    --descriptionCl: #898989;
+    --shopBtnCl: #E89F71;
+}
+.mainContent{
+    padding: 3.5rem;
+}
+.modalContent{
+    width: 31rem;
+    height: 34rem;
+    background-color: #fff;
+    opacity: 0.9;
+    position: absolute;
+    z-index: 10;
+    top: 9rem;
+    left: 6rem;
+}
+.title{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.description{
+    color: var(--descriptionCl);
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+.shopBtn{
+    background-color: var(--shopBtnCl);
+    font-size: 1.2rem;
+    padding: 1.5rem 9rem;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+.title{
+    margin: 0;
+}

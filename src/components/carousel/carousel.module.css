@@ -1,0 +1,95 @@
+.slideCenter{
+    width: 70.5%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0rem;
+    left: 21.5rem;
+}
+.slideLeft{
+    width: 20%;
+    height: 100%;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+}
+.slideRight{
+    width: 5%;
+    height: 100%;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+}
+.slideContainer{
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.dotContainer{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    align-items: center;
+}
+.arrowContainer{
+
+}
+.switchContainer{
+    position: relative;
+    bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    left: 46rem;
+    justify-content: space-between;
+    height: fit-content;
+    align-items: center;
+    width: 490px;
+}
+.dotStyle{
+    width: fit-content;
+    height: fit-content;
+    margin-right: 1rem;
+}
+.dotStyle:hover{
+    opacity: 0.9;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.arrowContainer{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    align-items: center;
+}
+.dotActive{
+    position: relative;
+    top: 8px;
+}
+
+.arowLeft{
+    margin-right: 0.5rem;
+}
+.arowLeft:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+    cursor: pointer;
+}
+.arowRight:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+    cursor: pointer;
+}
+.carouselContainer{
+    animation: 10s slide infinite
+}
+@keyframes slide {
+    
+}

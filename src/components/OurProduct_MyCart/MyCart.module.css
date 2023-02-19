@@ -1,0 +1,36 @@
+:root{
+    --btnBuy: #E89F71;
+}
+.submitContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.submitContainer > button[type=submit]{
+    padding: 0 2rem;
+    height: 2rem;
+    background-color: var(--btnBuy);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 3px 3px #be825d;
+    cursor: pointer;
+}
+.submitContainer > button[type=submit]:hover{
+    transform: scale(1.1);
+}
+.shoppingCart{
+    position: absolute;
+    background-color: #fff;
+    top: 5rem;
+    right: 0;
+    width: 20rem;
+    padding: 2rem 1rem;
+    box-shadow: 5px 7px 3px #efefef;
+    display: none;
+}
+.shoppingCartOn{
+    display: block;
+}

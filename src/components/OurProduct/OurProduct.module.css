@@ -1,0 +1,36 @@
+:root{
+    --orangeTomato: #E89F71;
+    --orangeTomatoBold: #cb8b62;
+}
+
+.title{
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 6rem;
+    
+}
+.btnShow{
+    color: var(--orangeTomato);
+    border: 1px solid var(--orangeTomato);
+    padding: 0.8rem 5rem;
+    background: #fff;
+    box-shadow: 3px 5px 0 var(--orangeTomatoBold);
+    transition: 0.4s;
+}
+.btnShow:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+    cursor: pointer;
+}
+.showMore{
+    text-align: center;
+    margin: 1rem 0 3rem 0;
+    
+}

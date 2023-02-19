@@ -1,0 +1,89 @@
+:root{
+    --cardBg: #F4F5F7;
+    --desColor: #898989;
+    --priceBefore: #B0B0B0;
+    --buyModalCover: #3A3A3A;
+    --addCartBtnColor: #E89F71;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+    background-color: var(--cardBg);
+    position: relative;
+    overflow: hidden; /*để con ko tràn khỏi cha*/
+    
+}
+
+
+
+
+.btnFavor{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.headingFavor{
+    margin-left: 0.5rem;
+}
+
+.priceContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contentContainer{
+    padding: 1rem 1rem 2rem 2rem;
+}
+.des{
+    color: var(--desColor);
+}
+.priceBefore{
+    color: var(--priceBefore);
+    text-decoration: line-through;
+}
+.addToCartBtn{
+    padding: 0.8rem 3rem;
+    color: var(--addCartBtnColor);
+    font-size: 1rem;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+}
+.containerBtnBuy{
+    display: flex;
+    flex-direction: column;
+    padding: 12rem 2.5rem 10rem 2.5rem;
+    position: absolute;
+    top: 30rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--buyModalCover);
+    opacity: 0.8;
+    
+    transition: top 0.3s ease-in-out;
+}
+.cardInfo:hover .containerBtnBuy{
+    top: 0;
+    transition: top 0.3s ease-in-out;
+}
+.addToFavourite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@keyframes modalAppear {
+    from {
+        top: 30rem
+    } to {
+        top: 0;
+    }
+}

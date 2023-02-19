@@ -1,0 +1,48 @@
+
+.slideList{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.slideCardContainer{
+    display: flex;
+    width: 100%;
+    
+}
+
+.slideListContainer{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+}
+.slideListContainer::-webkit-scrollbar{
+    display: none;
+}
+.bulletList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+.bulletItem{
+    list-style-type: none;
+    margin-right: 1rem;
+}
+
+.prevBtn{
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    cursor: pointer;
+}
+.nextBtn{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    cursor: pointer;
+}

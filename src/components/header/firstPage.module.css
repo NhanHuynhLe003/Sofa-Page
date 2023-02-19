@@ -1,0 +1,42 @@
+
+:root{
+    --asideLeft: #F9F1E7;
+    --mainBG: #FCF8F3;
+}
+
+.asideLeft{
+    background-color: var(--asideLeft);
+    position: relative;
+    width: 70%;
+    height: 100vh;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.content{
+    background-color: var(--mainBG);
+}
+.carouselContainer{
+    width: 100%;
+    height: 553px;
+    position: absolute;
+    bottom: 0;
+}
+.miniModal{
+    position: absolute;
+    bottom: 2rem;
+    right: 10rem;
+    background-color: #fff;
+    opacity: 0.8;
+    padding: 1.5rem 6rem 1.5rem 1.5rem;
+}
+.miniModalContainer{
+    
+}
+

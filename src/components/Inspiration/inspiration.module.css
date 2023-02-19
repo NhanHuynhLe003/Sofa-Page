@@ -1,0 +1,23 @@
+:root{
+    --btnMoreColor: #E89F71;
+}
+
+.asideLeft{
+    width: 40%;
+    padding: 14rem 6rem 14rem 6.5rem;
+}
+.asideLeft .btnMore{
+    padding: 0.8rem 3.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--btnMoreColor);
+    border: none;
+}
+.asideRight{
+    width: 65%;
+}
+.inspContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
