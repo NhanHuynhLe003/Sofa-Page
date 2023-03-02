@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './BohausModal.module.css'
+import style from './bohausModal.module.css'
 export default function BohausModal() {
   return (
     <>
