@@ -26,3 +26,10 @@ export const searchProductText = text => {
     }
 }
 
+export const addToMyBill = listProduct => {
+    return {
+        type: 'Add_To_My_Bill',
+        payload: listProduct,
+    }
+}
+

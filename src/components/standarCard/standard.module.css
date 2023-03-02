@@ -22,4 +22,25 @@
 .containerCard{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    
+}
+
+@media screen and (max-width: 576px) {
+    
+    .containerCard{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 4rem;
+    }
+    .containerCard .iconStandard{
+        margin-right: 0;
+        
+    }
+    .containerCard h5{
+        font-size: 1rem;
+    }
+    .containerCard p{
+        font-size: 0.8rem;
+    }
 }

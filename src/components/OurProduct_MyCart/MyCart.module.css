@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.submitContainer > button[type=submit]{
+.buyBtn{
     padding: 0 2rem;
     height: 2rem;
     background-color: var(--btnBuy);
@@ -18,7 +18,7 @@
     box-shadow: 3px 3px #be825d;
     cursor: pointer;
 }
-.submitContainer > button[type=submit]:hover{
+.buyBtn:hover{
     transform: scale(1.1);
 }
 .shoppingCart{
@@ -33,4 +33,11 @@
 }
 .shoppingCartOn{
     display: block;
+}
+
+@media screen and (max-width: 576px) {
+    .shoppingCart{
+        right: 1rem;
+        left: 1rem;
+    }
 }

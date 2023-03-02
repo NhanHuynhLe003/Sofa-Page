@@ -7,15 +7,15 @@
 }
 
 .cardInfo{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 22%;
     margin: 0 1rem;
     margin-bottom: 2rem;
     background-color: var(--cardBg);
     position: relative;
     overflow: hidden; /*để con ko tràn khỏi cha*/
-    
 }
 
 
@@ -61,7 +61,7 @@
     flex-direction: column;
     padding: 12rem 2.5rem 10rem 2.5rem;
     position: absolute;
-    top: 30rem;
+    top: 31rem;
     bottom: 0;
     left: 0;
     right: 0;
@@ -74,16 +74,41 @@
     top: 0;
     transition: top 0.3s ease-in-out;
 }
+.description{
+    margin: 1rem 0;
+}
 .addToFavourite{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-
+.imgContainer >img{
+    width: 100%;
+}
 @keyframes modalAppear {
     from {
-        top: 30rem
+        top: 31rem
     } to {
         top: 0;
     }
+}
+@media screen and (max-width: 576px) {
+    .cardInfo{
+        width: 45%;
+        gap: 0.5rem;
+        margin: 0.5rem;
+    }
+    .cardInfo> .contentContainer{
+        padding: 0 1rem 1rem 1rem;
+    }
+    .cardInfo> .contentContainer > h2{
+        margin-top: 0.5rem;
+    }
+    .priceBefore{
+        font-size: 0.6rem;
+    }
+    .PriceAfter{
+        font-size: 0.8rem;
+    }
+    
 }

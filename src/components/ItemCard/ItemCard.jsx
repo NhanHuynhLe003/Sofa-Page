@@ -3,7 +3,6 @@ import style from "./ItemCard.module.css";
 import {FaShare, FaHeart} from 'react-icons/fa'
 export default function ItemCard({ url, title, des, priceBefore, priceAfter, handleAddToCart, discouter, id, imgProduct }) {
   const [isHoverCard, setIsHoverCard] = useState(false);
-
   return (
     <div className={style.cardInfo}>
           <div className={style.imgContainer}>

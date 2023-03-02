@@ -45,6 +45,7 @@ export default function SharePage() {
 
   return (
     <div>
+      <h1 style={{textAlign: 'center', fontWeight: 'bold'}}>#FuniroFurniture</h1>
       <div className={style.galleryContainer}>
         <div className={clsx(style.col, style.columnBig, style.columnLeft)}>
           <div className={clsx(style.row, style.rowUp)}>

@@ -36,7 +36,7 @@ export default function OurProduct() {
   }
 
   return (
-    <div>
+    <div className={style.cardCover}>
       <h1 className={style.title}>Our Product</h1>
       <div className={style.cardContainer}>
         {productData ? (

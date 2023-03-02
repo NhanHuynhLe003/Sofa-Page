@@ -4,6 +4,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     background-color: #fff;
+    padding-top: 0.7rem;
 }
 h3,h5{
     margin: 0;
@@ -72,6 +73,8 @@ h3,h5{
     background-color: #ccc;
 }
 
+
+
 .amountItem{
     display: block;
     background-color: red;
@@ -85,4 +88,83 @@ h3,h5{
     left: 1.4rem;
     font-size: 1rem;
     text-align: center;
+}
+.myInfoContainer{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    width: 10rem;
+    font-size: 1rem;
+    left: -3.5rem;
+    
+    background-color: #fff;
+    padding: 0.5rem;
+    
+}
+.myInfoContainerOn{
+    display: flex;
+    
+}
+.myInfoContainer>h4{
+    padding: 5px;
+    width: 100%;
+}
+.myInfoContainer>h4:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.avatarUser{
+    position: relative;
+}
+.avatarUser > img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.showNavInMobile{
+    display: none;
+}
+.infoRightNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.showNavDirect{
+    display: flex;
+}
+@media screen and (max-width: 576px) {
+    .listContainer{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .searchInput{
+        width: 12rem;
+    }
+    .navContainer{
+        justify-content: left;
+        flex-direction: column-reverse;
+        
+    }
+    .rightNav{
+        margin-right: 0;
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+    .showNavInMobile{
+        display: block;
+        margin: 0 1rem;
+        font-size: 1.5rem;
+    }
+    .listContainerShow{
+        display: flex;
+    }
+    .navContainer{
+        padding-top: 0;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    
 }

@@ -1,3 +1,6 @@
 .swiperSlideActived{
   height: 28rem !important;
 }
+@media screen and (max-width: 576px) {
+  
+}

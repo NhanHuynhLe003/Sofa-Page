@@ -4,7 +4,7 @@ export default function StandardCard({ content, title, url }) {
   return (
     <div className={style.containerCard}>
       <div className={style.iconStandard}>
-        <img src={url} alt="anh chat luong" />
+        <img style={{width: '100%'}} src={url} alt="anh chat luong" />
       </div>
       <div>
         <h5 className={style.title}>{title}</h5>

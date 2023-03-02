@@ -5,8 +5,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 0rem;
-    left: 21.5rem;
+    top: 0;
+    left: 23%;
 }
 .slideLeft{
     width: 20%;
@@ -76,6 +76,13 @@
 
 .arowLeft{
     margin-right: 0.5rem;
+
+}
+.arowLeft>img{
+    width: 100%;
+}
+.arowRight>img{
+    width: 100%;
 }
 .arowLeft:hover{
     transform: scale(1.1);
@@ -92,4 +99,34 @@
 }
 @keyframes slide {
     
+}
+@media screen and (max-width: 576px) {
+    .slideLeft{
+        display: none;
+    }
+    .slideRight{
+        display: none;
+    }
+    .slideCenter{
+        left: 0;
+        width: 100%;
+    }
+    .switchContainer{
+        left: 1rem;
+        width: 90%;
+    }
+    
+    .arowLeft{
+        width: 2rem;
+    }
+    .arowRight{
+        width: 2rem;
+    }
+    .switchContainer{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .carouselContainer{
+        
+    }
 }

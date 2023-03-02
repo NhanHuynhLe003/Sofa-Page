@@ -27,3 +27,15 @@
     height: 100%;
     object-fit: cover;
   }
+  @media screen and (max-width: 576px){
+    .swiper-slide{
+      width: 60% !important;
+      height: 24rem !important;
+    }
+    .swiper-slide.swiper-slide-active{
+      height: 24rem !important;
+    }
+    .swiper-pagination-bullets.swiper-pagination-horizontal{
+      left: 40% !important;
+    }
+  }

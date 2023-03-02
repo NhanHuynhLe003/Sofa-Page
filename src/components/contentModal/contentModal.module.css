@@ -7,7 +7,6 @@
 }
 .modalContent{
     width: 31rem;
-    height: 34rem;
     background-color: #fff;
     opacity: 0.9;
     position: absolute;
@@ -34,4 +33,38 @@
 }
 .title{
     margin: 0;
+}
+@media screen and (max-width: 576px){
+    .mainContent{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainContent>h1{
+        font-size: 2rem;
+    }
+    .mainContent>p{
+        font-size: 1rem;
+    }
+    .shopBtn{
+        padding: 0.5rem 1.5rem;
+    }
+    .modalContent{
+        width: 100%;
+        left: 25%;
+        top: 10%;
+        display: none;
+    }
+    .modalContent h1{
+        font-size: 1.5rem;
+    }
+    .modalContent .description{
+        font-size: 0.8rem;
+        margin: 0.5rem 0;
+    }
+    .modalContent button{
+        font-size: 0.8rem;
+        padding: 0.25rem 1rem;
+    }
 }

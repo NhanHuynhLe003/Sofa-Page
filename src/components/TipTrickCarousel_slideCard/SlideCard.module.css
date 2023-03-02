@@ -23,3 +23,15 @@
     scroll-snap-align: center;
 }
 
+@media screen and (max-width: 576px) {
+    .slideCard{
+        flex: 0 0 40%;
+    }
+    .title{
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+    .timeUpdate{
+        margin: 0;
+    }
+}

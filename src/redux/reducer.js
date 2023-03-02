@@ -2,20 +2,26 @@ const initState = {
   search: '',
   myCart: [],
   productData: [],
+  MyBill: []
 };
 
 const rootReducer = (state = initState, action) => {
   
 
   switch (action.type) {
-    case "Set_Product_Data":
-        console.log(action.payload)
-        return {
-            ...state,
-            productData: action.payload
-        }
     case "Add_To_Cart":
+      console.log(action)
+      console.log(state.myCart)
       action.payload.amount = 1;
+      for (let i = 0; i < state.myCart.length; i++) {
+        if (state.myCart[i].id === action.payload.id) {
+          state.myCart[i].amount++
+          return {
+            ...state,
+            myCart: [...state.myCart],
+          };
+        }
+      }
       return {
         ...state,
         myCart: [...state.myCart, action.payload],
@@ -29,6 +35,11 @@ const rootReducer = (state = initState, action) => {
         return {
             ...state,
             search: action.payload
+        }
+    case "Add_To_My_Bill":
+        return {
+            ...state,
+            MyBill: [...state.MyBill, action.payload]
         }
     default:
       return state;

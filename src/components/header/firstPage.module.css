@@ -39,4 +39,32 @@ header{
 .miniModalContainer{
     
 }
+@media screen and (max-width: 576px){
+    .carouselContainer{
+        height: 50%;
+    }
+    .asideLeft{
+        height: 100%;
+    }
+    .content{
+        height: 50vh;
+        position: relative;
+    }
+    .miniModal{
+        padding: 0.5rem;
+        bottom: 0;
+        right: 0;
+    }
+    .miniModal > h3{
+        font-size: 0.8rem;
+    }
+    .miniModal > p{
+        font-size: 0.6rem;
+        margin: 0.5rem 0;
+        opacity: 0.8;
+    }
+    .miniModal > h5{
+        font-size: 0.7rem;
+    }
+}
 

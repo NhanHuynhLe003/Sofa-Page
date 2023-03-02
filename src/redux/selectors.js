@@ -5,3 +5,4 @@ export const setProductDataSelector = (state) => {
     return state.productData;
 }
 export const searchProductSelector = (state) => state.search;
+

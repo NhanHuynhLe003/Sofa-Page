@@ -73,10 +73,10 @@ export default function TipTrickCarousel({ slides }) {
     <>
       
         <span className={style.prevBtn} onClick={handlePrevBtn}>
-          <img src={images.btnPrev} alt="prevBtn" />
+          <img style={{width: '100%'}} src={images.btnPrev} alt="prevBtn" />
         </span>
         <span className={style.nextBtn} onClick={handleNextBtn}>
-          <img src={images.nextBtn} alt="NextBtn" />
+          <img style={{width: '100%'}} src={images.nextBtn} alt="NextBtn" />
         </span>
       
       <div

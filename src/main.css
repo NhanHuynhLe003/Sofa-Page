@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("./assets/font/Gilroy-Light.otf");
+}
+
+@font-face{
+    font-family: GilroyBold;
+    src: url("./assets/font/Gilroy-ExtraBold.otf");
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Gilroy ;
+}
+
+::-webkit-scrollbar{
+    width: 0.4rem;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: #f1d2aa;
+}
+
+
+::-webkit-scrollbar-track{
+    background-color: #f8eee3;
+}

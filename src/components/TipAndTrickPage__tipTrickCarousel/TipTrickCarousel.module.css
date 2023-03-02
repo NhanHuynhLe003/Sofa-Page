@@ -46,3 +46,14 @@
     top: 50%;
     cursor: pointer;
 }
+@media screen and (max-width: 576px) {
+    .prevBtn{
+        left: 0;
+        width: 4rem;
+    }
+    .nextBtn{
+        right: 0;
+        width: 4rem;
+    }
+    
+}
