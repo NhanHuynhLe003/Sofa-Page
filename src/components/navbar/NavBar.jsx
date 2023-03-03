@@ -10,6 +10,7 @@ import {
   setProductDataSelector,
   myCartSelector,
 } from "../../redux/selectors";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [isClickCart, setIsClickCart] = useState(false);
@@ -102,7 +103,7 @@ export default function NavBar() {
               })}
             >
               <h4 style={{ margin: 0 }}>Thông Tin</h4>
-              <h4 style={{ margin: 0 }}>Đơn Hàng Của Tôi</h4>
+              <h4 style={{ margin: 0 }}><Link style={{textDecoration:'none', color:'#000'}} to="/user-bill">Đơn Hàng Của Tôi</Link></h4>
             </div>
           </div>
 

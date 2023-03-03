@@ -28,7 +28,7 @@ export default function TableCart({ myCart, setTotalPrice }) {
         <input
 
           type="number"
-          style={{ width: "30%" }}
+          style={{ width: "50%" }}
           value={product.amount}
           onChange={(e) => handleChangeVal(e, product)}
           name="number"

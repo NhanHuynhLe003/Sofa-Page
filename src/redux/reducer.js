@@ -1,4 +1,7 @@
-const initState = {
+
+let productSelected = localStorage.getItem('productSelected');
+
+const initState = productSelected ? JSON.parse(productSelected) :{
   search: '',
   myCart: [],
   productData: [],
@@ -10,8 +13,7 @@ const rootReducer = (state = initState, action) => {
 
   switch (action.type) {
     case "Add_To_Cart":
-      console.log(action)
-      console.log(state.myCart)
+
       action.payload.amount = 1;
       for (let i = 0; i < state.myCart.length; i++) {
         if (state.myCart[i].id === action.payload.id) {
@@ -37,10 +39,13 @@ const rootReducer = (state = initState, action) => {
             search: action.payload
         }
     case "Add_To_My_Bill":
-        return {
+        const myBill = {
             ...state,
-            MyBill: [...state.MyBill, action.payload]
+            MyBill: [...state.MyBill, action.payload],
+            myCart: []
         }
+        localStorage.setItem('productSelected', JSON.stringify(myBill));
+        return myBill
     default:
       return state;
   }

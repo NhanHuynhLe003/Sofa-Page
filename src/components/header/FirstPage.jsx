@@ -4,12 +4,16 @@ import ContentModal from '../contentModal/ContentModal'
 import NavBar from '../navbar/NavBar'
 import style from './firstPage.module.css'
 import BohausModal from '../BohausModal/BohausModal'
+import img1 from "../../assets/imgSliderCarousel/imgSlider-01.jpg"
+import img2 from "../../assets/imgSliderCarousel/imgSlider-02.jpg"
+import img3 from "../../assets/imgSliderCarousel/imgSlider-03.jpg"
+import img4 from "../../assets/imgSliderCarousel/imgSlider-04.jpg"
 export default function FirstPage() {
   const slidesImg = [
-    {url: './src/assets/imgSliderCarousel/imgSlider-01.jpg', title:'img-01'},
-    {url: './src/assets/imgSliderCarousel/imgSlider-02.jpg', title:'img-02'},
-    {url: './src/assets/imgSliderCarousel/imgSlider-03.jpg', title:'img-03'},
-    {url: './src/assets/imgSliderCarousel/imgSlider-04.jpg', title:'img-04'}
+    {url: img1, title:'img-01'},
+    {url: img2, title:'img-02'},
+    {url: img3, title:'img-03'},
+    {url: img4, title:'img-04'}
   ]
   return (
     <div>

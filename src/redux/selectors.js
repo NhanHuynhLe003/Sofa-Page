@@ -6,3 +6,6 @@ export const setProductDataSelector = (state) => {
 }
 export const searchProductSelector = (state) => state.search;
 
+export const myBillSelector = state => {
+    return state.MyBill;
+}
