@@ -21,6 +21,7 @@
     box-shadow: 3px 3px 2px #ccc;
     margin-right: 0.8rem;
     cursor: pointer;
+    text-decoration: none;
     transition: transform 300ms;
 }
 .MyBillPage__bill__btn:hover{

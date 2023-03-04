@@ -17,7 +17,6 @@ function App() {
       <Inspiration/>
       <TipAndTrickPage/>
       <SharePage/>
-      <h1>------------------------------------------------abcd</h1>
       
     </div>
   )

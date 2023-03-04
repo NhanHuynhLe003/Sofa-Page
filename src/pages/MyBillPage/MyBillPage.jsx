@@ -4,6 +4,7 @@ import clsx from "clsx";
 import { myBillSelector } from "../../redux/selectors";
 import { useDispatch, useSelector } from "react-redux";
 import {deleteBill, editMyBill} from "../../redux/actions"
+import { Link } from "react-router-dom";
 export default function MyBillPage() {
   const dispatch = useDispatch();
   const userBillStore = useSelector(myBillSelector).userBill;
@@ -40,7 +41,9 @@ export default function MyBillPage() {
                     className={clsx(style.MyBillPage__bill__btn, style.btnEdit)}
                     onClick={() => handleEditBill(index)}
                   >
-                    Sửa
+                    <Link style={{textDecoration:'none', color:"#000"}} to='/'>
+                      Sửa
+                    </Link>
                   </button>
                   <button
                     className={clsx(
