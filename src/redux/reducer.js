@@ -61,7 +61,7 @@ const rootReducer = (state = initState, action) => {
             ...state,
             MyBill: {
               ...state.MyBill,
-              userBill: [...state.MyBill.userBill, action.payload]
+              userBill: [...(state.MyBill.userBill), action.payload]
             },
             myCart: {
               ...state.myCart,
@@ -84,7 +84,7 @@ const rootReducer = (state = initState, action) => {
         }
 
       case "Submit_Edited":
-        const billEdited = [...state.MyBill.userBill];
+        const billEdited = [...(state.MyBill.userBill)];
         if(state.myCart.isEdit !== -1){
           billEdited[state.myCart.isEdit] = state.myCart;
         } 
