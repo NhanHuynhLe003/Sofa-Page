@@ -68,7 +68,7 @@ const rootReducer = (state = initState, action) => {
               listProduct: []
             }
         }
-
+        console.log('userBill:',state.MyBill.userBill);
         localStorage.setItem('productSelected', JSON.stringify(newBill.MyBill));
         return newBill
       case "Edit_My_Bill":
