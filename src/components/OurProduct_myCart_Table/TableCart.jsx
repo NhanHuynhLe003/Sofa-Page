@@ -17,10 +17,10 @@ export default function TableCart({ myCart, setTotalPrice }) {
 
   }
 
-  const totalPriceProduct = myCart && myCart.reduce((sum, item) => sum + item.discoutedPrice*item.amount, 0);
+  const totalPriceProduct = myCart.listProduct && myCart.listProduct.reduce((sum, item) => sum + item.discoutedPrice*item.amount, 0);
     setTotalPrice(totalPriceProduct);
 
-  const data = myCart && myCart.map((product, index) => {
+  const data = myCart.listProduct && myCart.listProduct.map((product, index) => {
     return {
       key: index,
       name: product.name,

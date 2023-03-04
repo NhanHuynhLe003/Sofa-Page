@@ -20,6 +20,7 @@ export default function NavBar() {
   const dispatch = useDispatch();
   const searchInputStored = useSelector(searchProductSelector);
   const myCartSlt = useSelector(myCartSelector);
+  
   const [showNav, setShowNav] = useState(false);
   function handleShowInMobile(){
     setShowNav(!showNav);
@@ -84,7 +85,7 @@ export default function NavBar() {
             onClick={handleShowShoppingCart}
           >
             <FaShoppingCart />
-            <span className={style.amountItem}>{myCartSlt.length}</span>
+            <span className={style.amountItem}>{myCartSlt.listProduct.length}</span>
           </div>
           <div
             className={clsx(style.avatarUser, style.navRightItem)}

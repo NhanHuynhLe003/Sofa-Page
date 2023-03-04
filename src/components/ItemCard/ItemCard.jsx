@@ -26,7 +26,7 @@ export default function ItemCard({ url, title, des, priceBefore, priceAfter, han
                 discoutedPrice: priceAfter,
                 discouter,
                 description: des,
-                imgProduct
+                imgProduct,
               })}>Add to cart</button>
             <div className={style.addToFavourite}>
               <span className={style.btnFavor}><FaShare/> <h4 className={style.headingFavor}>Share</h4></span>

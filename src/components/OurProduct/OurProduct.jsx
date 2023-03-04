@@ -5,6 +5,7 @@ import room1 from "../../assets/images/room01.jpg";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, removeInCart, setProductData } from "../../redux/actions";
 import { myCartSelector, searchProductSelector } from "../../redux/selectors";
+import {Space, Spin} from "antd"
 export default function OurProduct() {
   const dispatch = useDispatch(); //dispatch(action); con voi creator: dispatch(action(payload));
   const myCart = useSelector(myCartSelector); //useSelector de lay ra du lieu ben trong kho luu tru
@@ -87,7 +88,9 @@ export default function OurProduct() {
             );
           })
         ) : (
-          <h1>Loading Data . . . . .</h1>
+          <Space size="large" >
+            <Spin size="large"/>
+          </Space>
         )}
       </div>
       <div className={style.showMore}>

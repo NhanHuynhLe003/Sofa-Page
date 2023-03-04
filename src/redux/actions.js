@@ -33,3 +33,24 @@ export const addToMyBill = listProduct => {
     }
 }
 
+
+export const editMyBill = index => {
+    return {
+        type: 'Edit_My_Bill',
+        payload: index
+    }
+}
+
+export const submitEditMyBill = () => {
+    return {
+        type: 'Submit_Edited',
+    }
+}
+
+export const deleteBill = index => {
+    return {
+        type: 'Delete_Bill',
+        payload: index
+    }
+}
+
