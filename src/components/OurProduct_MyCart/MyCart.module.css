@@ -1,11 +1,30 @@
 :root{
     --btnBuy: #E89F71;
+    --delBuy: rgb(221, 42, 42);
 }
 .submitContainer{
+    display: flex;
+    flex-direction: column;
+}
+.controller{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.delBtn{
+    padding: 0 1.5rem;
+    height: 1.5rem;
+    background-color: var(--delBuy);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 3px 3px #a52b2b;
+    cursor: pointer;
+}
+.delBtn:hover{
+    opacity: 0.8;
 }
 .buyBtn{
     padding: 0 2rem;
@@ -33,6 +52,11 @@
 }
 .shoppingCartOn{
     display: block;
+}
+.totalBill{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    
 }
 
 @media screen and (max-width: 576px) {

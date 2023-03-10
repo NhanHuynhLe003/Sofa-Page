@@ -54,3 +54,12 @@ export const deleteBill = index => {
     }
 }
 
+
+
+export const deleteProductSelected = (keysCheckBox) => {
+    return{
+        type: 'Delete_Product_Selected',
+        payload: keysCheckBox
+    }
+}
+

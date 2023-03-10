@@ -19,8 +19,12 @@ export default function NavBar() {
   const [searchVal, setSearchVal] = useState("");
   const dispatch = useDispatch();
   const searchInputStored = useSelector(searchProductSelector);
+
   const myCartSlt = useSelector(myCartSelector);
   
+  useEffect(()=>{
+    myCartSlt.isEdit === -1 ? setIsClickCart(false) : setIsClickCart(true);
+  },[myCartSlt])
   const [showNav, setShowNav] = useState(false);
   function handleShowInMobile(){
     setShowNav(!showNav);
@@ -103,8 +107,8 @@ export default function NavBar() {
                 [style.myInfoContainerOn]: isClickAvatar,
               })}
             >
-              <h4 style={{ margin: 0 }}>Thông Tin</h4>
-              <h4 style={{ margin: 0 }}><Link style={{textDecoration:'none', color:'#000'}} to="/user-bill">Đơn Hàng Của Tôi</Link></h4>
+              <h4 style={{ margin: 0, fontSize: '1rem' }}>Thông Tin</h4>
+              <h4 style={{ margin: 0 }}><Link style={{textDecoration:'none', color:'#000', fontSize: '1rem'}} to="/user-bill">Đơn Hàng Của Tôi</Link></h4>
             </div>
           </div>
 

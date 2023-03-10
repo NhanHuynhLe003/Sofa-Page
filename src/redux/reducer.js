@@ -1,3 +1,4 @@
+import MyCart from "../components/OurProduct_MyCart/MyCart";
 
 let productSelected = localStorage.getItem('productSelected');
 
@@ -24,7 +25,6 @@ const rootReducer = (state = initState, action) => {
   switch (action.type) {
 
     case "Add_To_Cart":
-      console.log(state.myCart.listProduct);
       action.payload.amount = 1;
       for (let i = 0; i < state.myCart.listProduct.length; i++) {
         if (state.myCart.listProduct[i].id === action.payload.id) {
@@ -68,7 +68,6 @@ const rootReducer = (state = initState, action) => {
               listProduct: []
             }
         }
-        console.log('userBill:',state.MyBill.userBill);
         localStorage.setItem('productSelected', JSON.stringify(newBill.MyBill));
         return newBill
       case "Edit_My_Bill":
@@ -88,7 +87,6 @@ const rootReducer = (state = initState, action) => {
         if(state.myCart.isEdit !== -1){
           billEdited[state.myCart.isEdit] = state.myCart;
         } 
-        console.log(billEdited);
         return{
           ...state,
           MyBill: {
@@ -112,10 +110,24 @@ const rootReducer = (state = initState, action) => {
           MyBill: {
             ...state.MyBill,
             userBill: billDeleted
+          },
+          myCart: {
+            ...state.myCart,
+            isEdit: -1,
+            listProduct: [],
           }
         }
         localStorage.setItem('productSelected', JSON.stringify(billRemove.MyBill));
         return billRemove
+      
+      case 'Delete_Product_Selected': 
+          return{
+            ...state,
+            myCart: {
+              ...state.myCart,
+              listProduct: action.payload,
+            },
+          }
     default:
       return state;
   }

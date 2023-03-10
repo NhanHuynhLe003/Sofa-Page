@@ -1,0 +1,14 @@
+.BillDetail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    text-align: center;
+    position: relative;
+    margin: 1rem 0 2rem 0;
+}
+.content{
+    position: relative;
+    width: 80%;
+}

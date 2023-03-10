@@ -16,18 +16,25 @@ export default function MyBillPage() {
   function handleDeleteBill(index){
     dispatch(deleteBill(index));
   }
+
+  function handleSumPrice(list){
+    return list.reduce((sum, item) => sum + item.discoutedPrice*item.amount, 0);
+  }
+
   return (
     <div>
       <h1 style={{ textAlign: "center", margin: "1rem 0 2rem 0" }}>
-        Danh Sách Đơn Hàng
+        Đơn Hàng Của Tôi
       </h1>
       <ul className={style.MyBillPage__listBill}>
         {userBillStore &&
           userBillStore.map((billItem, index) => {
             return (
               <li className={style.MyBillPage__bill} key={`${Math.random()}_${index}`}>
-                <h3>Đơn hàng 1</h3>
-                <h4>Giá tiền: 100000</h4>
+                <div className={style.content}>
+                  <h3>Đơn hàng {index+1}</h3>
+                  <h4>Giá tiền: {handleSumPrice(billItem.listProduct)}</h4>
+                </div>
                 <div className={style.MyBillPage__bill__controller}>
                   <button
                     className={clsx(
@@ -38,10 +45,11 @@ export default function MyBillPage() {
                     Chi tiết
                   </button>
                   <button
+                  style={{padding: '0.5rem 0'}}
                     className={clsx(style.MyBillPage__bill__btn, style.btnEdit)}
                     onClick={() => handleEditBill(index)}
                   >
-                    <Link style={{textDecoration:'none', color:"#000"}} to='/'>
+                    <Link style={{textDecoration:'none', color:"#fff"}} to='/'>
                       Sửa
                     </Link>
                   </button>

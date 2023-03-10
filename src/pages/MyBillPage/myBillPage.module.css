@@ -1,18 +1,32 @@
 .MyBillPage__listBill{
     display: flex;
     flex-direction: column;
-   
+    gap: 1rem;
+    padding-left: 0;
+    width: 50%;
+    margin: 0 auto;
 }
 .MyBillPage__bill{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
 }
-.MyBillPage__bill>h3{
-    margin-right: 2rem;
+.MyBillPage__bill:hover{
+    background-color: #e8e8e8;
 }
-.MyBillPage__bill>h4{
-    margin-right: 3rem;
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+.MyBillPage__bill .content h3{
+
+}
+.MyBillPage__bill .content h4{
+
 }
 .MyBillPage__bill__btn{
     border: none;
@@ -23,7 +37,20 @@
     cursor: pointer;
     text-decoration: none;
     transition: transform 300ms;
+    color: #fff;
+}
+.MyBillPage__bill__btn>a{
+    padding: 0.5rem 2.5rem;
 }
 .MyBillPage__bill__btn:hover{
     transform: scale(1.1);
+}
+.btnDetail{
+    background-color: #41a360;
+}
+.btnEdit{
+    background-color: #4077b9;
+}
+.btnRemove{
+    background-color: rgb(180, 67, 67);
 }
