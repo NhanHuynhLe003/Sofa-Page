@@ -19,6 +19,15 @@ h3,h5{
     align-items: center;
     list-style-type: none;
     margin: 0 1rem;
+    cursor: pointer;
+}
+.listNavDirect:hover{
+    opacity: 0.7;
+}
+.listNavDirect h5{
+    margin: 0;
+    margin-right: 0.25rem,
+    
 }
 .listContainer{
     display: flex;

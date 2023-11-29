@@ -54,3 +54,6 @@
 .btnRemove{
     background-color: rgb(180, 67, 67);
 }
+.btnGoHomePage:hover{
+    opacity: 0.7;
+}

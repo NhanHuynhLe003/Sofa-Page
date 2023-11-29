@@ -26,6 +26,8 @@ export default function MyBillPage() {
       <h1 style={{ textAlign: "center", margin: "1rem 0 2rem 0" }}>
         Đơn Hàng Của Tôi
       </h1>
+
+      <Link className={style.btnGoHomePage} style={{textDecoration:'none', background: 'green', padding: '1rem 2rem', borderTopRightRadius:'2rem', cursor: 'pointer',borderBottomRightRadius:'2rem', color:'#fff', fontWeight:'bold', boxShadow:'3px 3px 2px #ccc'}} to='/'>Về Trang Chủ</Link>
       <ul className={style.MyBillPage__listBill}>
         {userBillStore &&
           userBillStore.map((billItem, index) => {
